@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+/* line 15, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body { background: #333; font-size: 19px; line-height: 27px; margin: 0 auto; font-family: 'Roboto', sans-serif; }
+/* line 22, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body header#main { max-width: 1100px; margin-left: auto; margin-right: auto; background: #222; color: #fff; padding: 10px 0; }
+/* line 12, /home/john/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+body header#main:after { content: " "; display: block; clear: both; }
+/* line 28, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body header#main h1 { margin-left: 10px; }
+/* line 31, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body header#main h1 a { color: #fff; text-decoration: none; }
+/* line 38, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body #wrapper { max-width: 1100px; margin-left: auto; margin-right: auto; background: rgba(255, 255, 255, 0.8); padding: 20px 0; }
+/* line 12, /home/john/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+body #wrapper:after { content: " "; display: block; clear: both; }
+/* line 43, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body #wrapper aside { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 25%; float: right; padding-left: 0.83333%; padding-right: 0.83333%; font-size: 14px; }
+/* line 49, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body #wrapper aside ol li, body #wrapper aside ul li { padding: 0; margin-left: 0; }
+/* line 56, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body #wrapper section { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 75%; float: left; padding-left: 0.83333%; padding-right: 0.83333%; }
+/* line 59, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body #wrapper section .article-date { margin-top: 20px; font-size: 16px; }
+/* line 66, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body a { color: #000; }
+/* line 69, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+body a:hover { color: #5D88D8; }
+
+/* line 74, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+h1 { font-size: 38px; line-height: 54px; margin-top: 54px; margin-bottom: 27px; }
+
+/* line 80, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+h2 { font-size: 30px; line-height: 54px; margin-top: 54px; margin-bottom: 27px; }
+
+/* line 86, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+h3 { font-size: 24px; line-height: 27px; margin-top: 27px; margin-bottom: 27px; }
+
+/* line 92, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+h4 { font-size: 19px; line-height: 27px; margin-top: 27px; margin-bottom: 27px; }
+
+/* line 98, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+p, ul, ol, pre, table, blockquote { margin-top: 27px; margin-bottom: 27px; }
+
+/* Sanitation */
+/* line 104, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+hr { border: 1px solid; margin: -1px 0; }
+
+/* line 108, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+ul ul, ol ol, ul ol, ol ul { margin-top: 0; margin-bottom: 0; }
+
+/* line 112, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+b, strong, em, small, code { line-height: 1; }
+
+/* line 115, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+sup, sub { vertical-align: baseline; position: relative; top: -0.4em; }
+
+/* line 120, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+sub { top: 0.4em; }
+
+/* line 125, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+pre code { font-size: 12px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }

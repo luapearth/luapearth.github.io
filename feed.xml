@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-08-12T08:00:00+08:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Swagger Editor</title>
+    <link rel="alternate" href="http://blog.url.com/2015/08/12/swagger-editor.html"/>
+    <id>http://blog.url.com/2015/08/12/swagger-editor.html</id>
+    <published>2015-08-12T08:00:00+08:00</published>
+    <updated>2015-08-13T12:50:08+08:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;
+	You built a REST API and you need to test your endpoint, you probably open your chrome browser and add extension like POSTMAN and start testing your endpoint and suddenly you think that you also need API documentation, you end up thinking how do I document my API or what tool should I use to make the documentation.
+&lt;/p&gt;
+&lt;p&gt;
+	Here's the answer &lt;strong&gt;Swagger Editor.&lt;/strong&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			it's an interactive web based editor for creating API documentation and also gives you the capability to test your endpoint with the same code your writing.
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+	To get you started here's some of the basics.
+&lt;/p&gt;
+&lt;pre&gt;
+	&lt;code class="ruby"&gt;
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Sample API
+basePath: /
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Ok
+	&lt;/code&gt;
+&lt;/pre&gt;
+&lt;strong&gt;Output&lt;/strong&gt;
+&lt;p&gt;
+	&lt;img src="/images/swagger-output-crop.png" alt="swagger output"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+	The code is base on YAML, correct indentation is very important.
+&lt;/p&gt;</content>
+  </entry>
+</feed>
