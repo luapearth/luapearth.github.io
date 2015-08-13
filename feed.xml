@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2015/08/12/swagger-editor.html"/>
     <id>http://blog.url.com/2015/08/12/swagger-editor.html</id>
     <published>2015-08-12T08:00:00+08:00</published>
-    <updated>2015-08-13T12:50:08+08:00</updated>
+    <updated>2015-08-13T13:15:49+08:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -34,7 +34,7 @@
 	To get you started here's some of the basics.
 &lt;/p&gt;
 &lt;pre&gt;
-	&lt;code class="ruby"&gt;
+&lt;code class="ruby"&gt;
 swagger: '2.0'
 info:
   version: 1.0.0
@@ -46,15 +46,29 @@ paths:
       responses:
         200:
           description: Ok
-	&lt;/code&gt;
+&lt;/code&gt;
 &lt;/pre&gt;
 &lt;strong&gt;Output&lt;/strong&gt;
 &lt;p&gt;
 	&lt;img src="/images/swagger-output-crop.png" alt="swagger output"&gt;
 &lt;/p&gt;
-
 &lt;p&gt;
 	The code is base on YAML, correct indentation is very important.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Swagger version&lt;/li&gt;
+	&lt;li&gt;Document Info
+		&lt;ul&gt;
+			&lt;li&gt;Version&lt;/li&gt;
+			&lt;li&gt;Document title&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Base path of the api&lt;/li&gt;
+	&lt;li&gt;API paths&lt;/li&gt;
+	&lt;li&gt;/ api url&lt;/li&gt;
+	&lt;li&gt;get request at the root url&lt;/li&gt;
+	&lt;li&gt;200 response code&lt;/li&gt;
+	&lt;li&gt;Server response Ok&lt;/li&gt;
+&lt;/ol&gt;</content>
   </entry>
 </feed>
