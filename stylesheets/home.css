@@ -8,3 +8,5 @@
 .swagger_editor .article-date-container { margin-top: 10px; }
 /* line 24, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
 .swagger_editor .article-date-container .article-date { color: #fff; font-size: .8em; background: rgba(0, 0, 0, 0.6); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; padding: 5px 10px; }
+/* line 32, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
+.swagger_editor .article-badge { width: 90px; height: 90px; margin: 20px auto; }
