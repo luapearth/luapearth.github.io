@@ -1,0 +1,10 @@
+/* line 3, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
+.swagger_editor { background: url("../images/swagger-editor1.png") center center; text-align: center; }
+/* line 8, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
+.swagger_editor h2 a { color: #d1d1d1; font-size: 4.7em; text-shadow: 2px 1px 3px #444; text-decoration: none; }
+/* line 15, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
+.swagger_editor .description { font-size: 1.2em; color: #fff; padding: 5px; background: rgba(0, 0, 0, 0.6); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+/* line 22, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
+.swagger_editor .article-date-container { margin-top: 10px; }
+/* line 24, /Users/Paul/Desktop/myBlog/source/stylesheets/home.css.scss */
+.swagger_editor .article-date-container .article-date { color: #fff; font-size: .8em; background: rgba(0, 0, 0, 0.6); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; padding: 5px 10px; }

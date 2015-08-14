@@ -1,71 +1,71 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
-/* line 15, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 15, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 h1 { font-size: 30px; line-height: 44px; margin-top: 44px; margin-bottom: 22px; }
 
-/* line 21, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 21, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 h2 { font-size: 26px; line-height: 44px; margin-top: 44px; margin-bottom: 22px; }
 
-/* line 27, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 27, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 h3 { font-size: 20px; line-height: 22px; margin-top: 22px; margin-bottom: 22px; }
 
-/* line 33, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 33, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 h4 { font-size: 15px; line-height: 22px; margin-top: 22px; margin-bottom: 22px; }
 
-/* line 39, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 39, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 p, ul, ol, pre, table, blockquote { margin-top: 22px; margin-bottom: 22px; }
 
 /* Sanitation */
-/* line 45, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 45, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 hr { border: 1px solid; margin: -1px 0; }
 
-/* line 49, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 49, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 ul ul, ol ol, ul ol, ol ul { margin-top: 0; margin-bottom: 0; }
 
-/* line 53, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 53, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 b, strong, em, small, code { line-height: 1; }
 
-/* line 56, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 56, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 sup, sub { vertical-align: baseline; position: relative; top: -0.4em; }
 
-/* line 61, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 61, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 sub { top: 0.4em; }
 
-/* line 65, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 65, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 pre { margin: 0; padding: 0; }
-/* line 68, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 68, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 pre code { font-size: 12px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 
-/* line 74, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 74, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body { background: #222; font-size: 15px; line-height: 22px; margin: 0 auto; font-family: 'Roboto', sans-serif; }
-/* line 81, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 81, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body header#main { max-width: 1100px; margin-left: auto; margin-right: auto; background: #444; color: #fff; padding: 10px 0; }
-/* line 12, /home/john/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+/* line 12, /Users/Paul/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 body header#main:after { content: " "; display: block; clear: both; }
-/* line 87, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 87, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body header#main h1 { margin-left: 10px; }
-/* line 90, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 90, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body header#main h1 a { color: #fff; text-decoration: none; }
-/* line 97, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 97, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper { max-width: 1100px; margin-left: auto; margin-right: auto; background: #d1d1d1; }
-/* line 12, /home/john/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+/* line 12, /Users/Paul/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 body #wrapper:after { content: " "; display: block; clear: both; }
-/* line 101, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 101, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper aside { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 25%; float: right; padding-left: 0.83333%; padding-right: 0.83333%; font-size: 14px; }
-/* line 107, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 107, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper aside ol li, body #wrapper aside ul li { padding: 0; margin-left: 0; }
-/* line 114, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 114, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper section { background: #e8e8e8; min-height: 500px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 75%; float: left; padding-left: 0.83333%; padding-right: 0.83333%; }
-/* line 119, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 119, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper section .article-date { margin-top: 20px; font-size: 16px; }
-/* line 124, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 124, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper section div.code-block { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; float: left; padding-left: 0.83333%; padding-right: 0.83333%; background: #d8d8d8; padding-top: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-/* line 129, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 129, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper section div.code-block pre { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 50%; float: left; padding-left: 0.83333%; padding-right: 0.83333%; }
-/* line 133, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 133, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper section div.code-block div { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 50%; float: right; padding-left: 0.83333%; padding-right: 0.83333%; }
-/* line 136, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 136, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body #wrapper section div.code-block div img { width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-/* line 145, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 145, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body a { color: #000; }
-/* line 148, /home/john/Sites/ruby/myblog/source/stylesheets/style.css.scss */
+/* line 148, /Users/Paul/Desktop/myBlog/source/stylesheets/style.css.scss */
 body a:hover { color: #5D88D8; }

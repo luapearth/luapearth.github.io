@@ -7,22 +7,16 @@
     <link rel="icon" href="favicon.ico">
     <link rel="shortcut-icon" href="favicon.ico">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-    <link href="../stylesheets/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="/stylesheets/jquery.fullPage.css">
+    <link href="../stylesheets/home.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    
-    <header id="main">
-      <h1>
-        <a href="/">John Paul's Blog</a>
-      </h1>
-    </header>
-    <div id="wrapper" role="main">
-      <section>
-        <h1>Articles tagged 'API'</h1>
+    <div style="position: fixed; left:10px; top:20px; color: #fff; z-index: 100;">
+      <h2>John Paul's Blog</h2>
+      <div class="g-plus" data-action="share"></div>
+    </div>
+    <div id="fullpage">
+      <h1>Articles tagged 'API'</h1>
 
 
 <ul>
@@ -30,24 +24,16 @@
 </ul>
 
 
-      </section>
-    
-      <aside>
-        <h2>Recent Articles</h2>
-        <ol>
-            <li><a href="/2015/08/12/swagger-editor.html">Swagger Editor</a> <span>Aug 12</span></li>
-        </ol>
-
-        <h2>Tags</h2>
-        <ol>
-            <li><a href="/tags/api.html">API (1)</a></li>
-        </ol>
-
-        <h2>By Year</h2>
-        <ol>
-            <li><a href="/2015.html">2015 (1)</a></li>
-        </ol>
-      </aside>
     </div>
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/jquery.fullPage.js"></script>
+    <script>
+      $(function() {
+        $('#fullpage').fullpage();
+      });
+    </script>
   </body>
 </html>
