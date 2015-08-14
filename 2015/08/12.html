@@ -9,6 +9,14 @@
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
     <link rel="stylesheet" href="/stylesheets/jquery.fullPage.css">
     <link href="../../stylesheets/home.css" rel="stylesheet" type="text/css" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/jquery.fullPage.js"></script>
+    <script>
+      $(function() {
+        $('#fullpage').fullpage();
+      });
+    </script>
   </head>
   <body>
     <div style="position: fixed; left:10px; top:20px; color: #fff; z-index: 100;">
@@ -27,15 +35,5 @@
 
 
     </div>
-
-
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="/javascripts/jquery.js"></script>
-    <script src="/javascripts/jquery.fullPage.js"></script>
-    <script>
-      $(function() {
-        $('#fullpage').fullpage();
-      });
-    </script>
   </body>
 </html>
