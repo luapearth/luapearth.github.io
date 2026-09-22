@@ -116,5 +116,7 @@ interactive element, Escape-to-close nav, 48px minimum hit targets.
 The scroll-reveal animation is opt-in: an inline head script adds `js-reveal` to
 `<html>` only when JS is available *and* `prefers-reduced-motion` is not set.
 Without that class the CSS never hides content, so nothing is trapped behind an
-animation that can't run. The copy-email button removes itself if the async
-clipboard API is unavailable, rather than sitting there doing nothing.
+animation that can't run. The copy-email button falls back to a hidden-textarea
+`execCommand` copy when the async clipboard API is missing or refused, and if
+both paths fail it selects the visible address and reads "Select & copy" rather
+than silently doing nothing.

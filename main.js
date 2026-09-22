@@ -112,29 +112,76 @@
 
   /* --- copy the email address ----------------------------------------- */
   var copyBtn = document.querySelector("[data-copy]");
+  var emailEl = document.querySelector(".emailrow__value");
 
-  if (copyBtn && navigator.clipboard) {
+  function legacyCopy(value) {
+    /* Fallback for when the async clipboard API is missing or refused
+       (permission denied, insecure context). execCommand still works in a
+       user-gesture handler on most browsers. */
+    var field = document.createElement("textarea");
+    field.value = value;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.top = "-1000px";
+    field.style.opacity = "0";
+    document.body.appendChild(field);
+    var ok = false;
+    try {
+      field.select();
+      ok = document.execCommand("copy");
+    } catch (err) {
+      ok = false;
+    }
+    document.body.removeChild(field);
+    return ok;
+  }
+
+  function selectEmail() {
+    if (!emailEl || !window.getSelection || !document.createRange) return;
+    var range = document.createRange();
+    range.selectNodeContents(emailEl);
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+
+  if (copyBtn) {
+    var copyLabel = copyBtn.querySelector(".copy__label");
+    var resetTimer;
+
+    function flashCopy(text) {
+      copyBtn.setAttribute("data-copied", "true");
+      if (copyLabel) copyLabel.textContent = text;
+      window.clearTimeout(resetTimer);
+      resetTimer = window.setTimeout(function () {
+        copyBtn.removeAttribute("data-copied");
+        if (copyLabel) copyLabel.textContent = "Copy";
+      }, 2400);
+    }
+
     copyBtn.addEventListener("click", function () {
       var value = copyBtn.getAttribute("data-copy");
-      navigator.clipboard.writeText(value).then(
-        function () {
-          var label = copyBtn.querySelector(".copy__label");
-          copyBtn.setAttribute("data-copied", "true");
-          if (label) label.textContent = "Copied";
-          window.setTimeout(function () {
-            copyBtn.removeAttribute("data-copied");
-            if (label) label.textContent = "Copy";
-          }, 2000);
-        },
-        function () {
-          /* Clipboard blocked (insecure context, permissions). The address
-             is already on screen as selectable text, so fail quietly. */
+
+      function onSuccess() {
+        flashCopy("Copied");
+      }
+
+      function onFailure() {
+        if (legacyCopy(value)) {
+          onSuccess();
+          return;
         }
-      );
+        /* Both paths refused. Put the cursor on the real text instead of
+           claiming the copy worked — the address is visible and selectable. */
+        selectEmail();
+        flashCopy("Select & copy");
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(value).then(onSuccess, onFailure);
+      } else {
+        onFailure();
+      }
     });
-  } else if (copyBtn) {
-    /* No async clipboard: the <code> element is selectable, so drop the
-       button rather than leaving a control that does nothing. */
-    copyBtn.remove();
   }
 })();
