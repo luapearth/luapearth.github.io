@@ -33,30 +33,43 @@ Opening `index.html` directly from the filesystem also works, except that
 ## Deployment
 
 Pushing to `main` triggers `.github/workflows/pages.yml`, which uploads the repo
-root as a Pages artifact and deploys it.
+root as a Pages artifact and deploys it. The Pages source is **Settings → Pages →
+Build and deployment → Source: GitHub Actions**.
 
-**One-time manual step** (repo admin, can't be done from code): in the GitHub
-repo go to **Settings → Pages → Build and deployment → Source** and select
-**GitHub Actions**. Until that is set, the workflow will fail at the deploy
-step. The site will then live at `https://luapearth.github.io/portfolio/`.
+This repository is named `luapearth.github.io`, and that name is what makes it
+serve at the domain **root** — `https://luapearth.github.io/`. A repo with any
+other name is served under `https://luapearth.github.io/<repo>/` instead, so
+renaming this repo changes the site's URL.
 
-To use a custom domain instead, add **Settings → Pages → Custom domain** *and*
-commit a `CNAME` file at the repo root containing the bare domain.
+To use a custom domain, add **Settings → Pages → Custom domain** *and* commit a
+`CNAME` file at the repo root containing the bare domain.
 
 ## Design system
 
-Neubrutalism: flat saturated colour, thick ink borders, hard offset shadows, no
-gradients, no blur, no soft elevation.
+Dark neon "Tokyo Night" Neubrutalism: flat fills, bright ink lines, hard offset
+shadows, no gradients, no blur, no soft elevation.
 
-Tokens live at the top of `styles.css` under `:root` — colour, border width,
-shadows, radii, and the three font families. Changing `--ink`, `--yellow`, or
-`--bw` there re-skins the whole site.
+The important inversion from a light neubrutalist theme: **in dark mode the
+"ink" role is the light line, not black.** `--line` (`#c0caf5`) draws every
+border and casts every hard shadow.
+
+Tokens live at the top of `styles.css` under `:root`. Changing `--line`,
+`--bg`, or `--bw` there re-skins the whole site.
 
 | Token group | Values |
 |---|---|
-| Ink / paper | `--ink` `#111111`, `--paper` `#fbf6ea`, `--surface` `#ffffff` |
-| Accents | `--yellow` `--cyan` `--pink` `--lime` `--orange` `--violet` |
+| Surfaces | `--bg` `#1a1b26`, `--bg-deep` `#16161e`, `--surface` `#1f2335`, `--surface-2` `#24283b` |
+| Ink | `--line` `#c0caf5`, `--text-dim` `#a9b1d6`, `--muted` `#9099c4`, `--on-bright` `#16161e` |
+| Neon accents | `--yellow` `#e0af68`, `--cyan` `#7dcfff`, `--magenta` `#bb9af7`, `--green` `#9ece6a`, `--orange` `#ff9e64`, `--blue` `#7aa2f7` |
+| Reserved | `--red` `#f7768e`, `--teal` `#73daca` (defined, not yet used) |
 | Type | Archivo Black (display), Space Grotesk (body), Space Mono (labels) |
+
+`--on-bright` is the text colour for anything sitting on a neon fill. Every
+neon accent is light, so text on it must be dark.
+
+`404.html` is deliberately self-contained — it inlines the handful of tokens it
+uses rather than linking `styles.css`, so it renders correctly at the root and
+under a project base path alike. **If you change the palette, update it too.**
 
 Fonts load from Google Fonts in `index.html`. To go fully self-hosted, drop the
 `<link>` tags and vendor the `woff2` files locally — the `--font-*` variables
@@ -92,19 +105,25 @@ block with a grid of cards and add the grid rule to `styles.css`:
 
 ## Content that still needs your input
 
-These were written as plausible stand-ins so the page reads as finished. Check
-each before publishing:
+The project showcase is now built from your own account of the work, not from
+the Stitch mockups (which contain invented companies, metrics, dates and an
+"AWS Certified" claim — none of that is on the site).
 
+- [ ] **Two descriptive project titles.** *Financial services websites* and
+      *Sensor data & dashboards* are deliberately descriptive, because you
+      described those as types of work rather than named projects. Replace them
+      with real project names, clients and outcomes when you have them.
 - [ ] **Tech tags** under *What I do* — React / TypeScript / Node.js / React
-      Native / Swift / Kotlin / Lambda / Docker etc. Delete anything you don't
-      actually use; they are guesses based on "web, mobile, AWS".
+      Native / Swift / Kotlin / Lambda / Docker etc. Still guesses based on
+      "web, mobile, AWS". Delete anything you don't actually use.
+- [ ] **MCP** is left unexpanded in the Janitorial card. If it means Model
+      Context Protocol, consider spelling it out; if it means something
+      specific to Ranyan, leave it as-is.
 - [ ] **Contact email** — currently `johnpaul.g.delmundo@gmail.com`. It appears
       in `index.html` in three places (mailto link, visible `<code>`, and the
       `data-copy` attribute on the copy button). Change all three together.
 - [ ] **GitHub URL** — currently `https://github.com/luapearth`. Appears in the
       work section and the contact section.
-- [ ] **About copy** — deliberately avoids naming employers, clients, or dates.
-      Add real specifics when you want them public.
 - [ ] **`<title>` / meta description** — tune for search if you care about it.
 
 ## Accessibility notes
