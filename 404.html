@@ -5,24 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Page not found &mdash; John Paul Del Mundo</title>
 <meta name="robots" content="noindex" />
-<meta name="theme-color" content="#FFD84D" />
+<meta name="theme-color" content="#1a1b26" />
 <!-- Everything this page needs is inlined, and links are relative, so it
      renders the same whether it is served at the site root or under a project
      base path like /portfolio. A root-relative /styles.css resolves to the
      WRONG site under a base path; a relative one breaks on nested miss URLs. -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='6' fill='%23FFD84D' stroke='%23111111' stroke-width='4'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Helvetica,sans-serif' font-size='30' font-weight='900' fill='%23111111'%3EJP%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='6' fill='%23E0AF68' stroke='%2316161E' stroke-width='4'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Helvetica,sans-serif' font-size='30' font-weight='900' fill='%2316161E'%3EJP%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <style>
   /* Self-contained: only the tokens and components this page actually uses.
-     Mirrors styles.css; keep the two in sync if the palette changes. */
+     Mirrors styles.css (dark neon "Tokyo Night" palette); keep in sync. */
   :root {
-    --ink: #111111;
-    --paper: #fbf6ea;
-    --surface: #ffffff;
-    --yellow: #ffd84d;
-    --muted: #55515c;
+    --bg: #1a1b26;
+    --bg-deep: #16161e;
+    --surface: #1f2335;
+    --line: #c0caf5;
+    --text: #c0caf5;
+    --muted: #9099c4;
+    --on-bright: #16161e;
+    --yellow: #e0af68;
+    --cyan: #7dcfff;
     --bw: 3px;
     --radius: 4px;
     --font-display: "Archivo Black", "Arial Black", system-ui, sans-serif;
@@ -32,8 +36,8 @@
   *, *::before, *::after { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--yellow);
-    color: var(--ink);
+    background: var(--bg);
+    color: var(--text);
     font-family: var(--font-body);
     font-size: 17px;
     line-height: 1.6;
@@ -47,16 +51,17 @@
     letter-spacing: -0.02em;
   }
   a { color: inherit; }
-  :focus-visible { outline: var(--bw) solid var(--ink); outline-offset: 3px; }
+  :focus-visible { outline: var(--bw) solid var(--cyan); outline-offset: 3px; }
 
   .eyebrow {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 20px;
     background: var(--yellow);
-    border: var(--bw) solid var(--ink);
+    color: var(--on-bright);
+    border: var(--bw) solid var(--line);
     border-radius: var(--radius);
-    box-shadow: 4px 4px 0 var(--ink);
+    box-shadow: 4px 4px 0 var(--line);
     font-family: var(--font-mono);
     font-size: 0.76rem;
     font-weight: 700;
@@ -69,17 +74,17 @@
     justify-content: center;
     min-height: 48px;
     padding: 12px 24px;
-    border: var(--bw) solid var(--ink);
+    border: var(--bw) solid var(--line);
     border-radius: var(--radius);
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--yellow);
+    color: var(--on-bright);
     font-weight: 700;
     text-decoration: none;
-    box-shadow: 5px 5px 0 var(--ink);
+    box-shadow: 5px 5px 0 var(--line);
     transition: transform 120ms ease, box-shadow 120ms ease;
   }
-  .btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--ink); }
-  .btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 var(--ink); }
+  .btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--line); }
+  .btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 var(--line); }
 
   .lost { display: grid; place-items: center; min-height: 100vh; padding: 24px; }
   .lost__card {
@@ -87,9 +92,9 @@
     max-width: 560px;
     padding: clamp(28px, 5vw, 48px);
     background: var(--surface);
-    border: var(--bw) solid var(--ink);
+    border: var(--bw) solid var(--line);
     border-radius: var(--radius);
-    box-shadow: 10px 10px 0 var(--ink);
+    box-shadow: 10px 10px 0 var(--line);
   }
   .lost__title { font-size: clamp(2rem, 1.2rem + 3vw, 3.2rem); margin-bottom: 16px; }
   .lost__body { color: var(--muted); margin-bottom: 28px; }

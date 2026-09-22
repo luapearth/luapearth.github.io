@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>John Paul Del Mundo — Software Engineer</title>
-<meta name="description" content="John Paul Del Mundo is a software engineer with more than 10 years building web and mobile products — from the interface to AWS infrastructure, shipped to the Apple App Store and Google Play." />
-<meta name="theme-color" content="#FFD84D" />
+<meta name="description" content="John Paul Del Mundo is a software engineer with more than 10 years building web and mobile products — APIs, authentication, AWS infrastructure, shipped to the Apple App Store and Google Play." />
+<meta name="theme-color" content="#1a1b26" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
 <meta property="og:type" content="website" />
@@ -63,16 +63,16 @@
       <div class="hero__copy">
         <p class="eyebrow">Software Engineer &middot; 10+ years</p>
         <h1 id="hero-title">
-          I build <span class="mark mark--pink">web</span> &amp;
+          I build <span class="mark mark--magenta">web</span> &amp;
           <span class="mark mark--cyan">mobile</span> products that actually ship.
         </h1>
         <p class="lede">
-          I take products end to end — the interface, the API, the infrastructure,
-          and the release. Apps I've built are live on the Apple App Store and
-          Google Play, running on AWS.
+          I take products end to end — the interface, the API, the authentication,
+          the infrastructure, and the release. Apps I've built are live on the
+          Apple App Store and Google Play, running on AWS.
         </p>
         <div class="hero__cta">
-          <a class="btn btn--ink" href="#work">See selected work</a>
+          <a class="btn btn--primary" href="#work">See selected work</a>
           <a class="btn btn--outline" href="#contact">Get in touch</a>
         </div>
       </div>
@@ -100,12 +100,12 @@
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
       <span class="marquee__group">
-        Web Development <em>&#9670;</em> Mobile Apps <em>&#9670;</em> AWS <em>&#9670;</em>
-        CI/CD <em>&#9670;</em> App Store Releases <em>&#9670;</em> Play Store Releases <em>&#9670;</em>
+        Web Development <em>&#9670;</em> Mobile Apps <em>&#9670;</em> Backend &amp; APIs <em>&#9670;</em>
+        AWS <em>&#9670;</em> Authentication <em>&#9670;</em> App Store Releases <em>&#9670;</em> Play Store Releases <em>&#9670;</em>
       </span>
       <span class="marquee__group">
-        Web Development <em>&#9670;</em> Mobile Apps <em>&#9670;</em> AWS <em>&#9670;</em>
-        CI/CD <em>&#9670;</em> App Store Releases <em>&#9670;</em> Play Store Releases <em>&#9670;</em>
+        Web Development <em>&#9670;</em> Mobile Apps <em>&#9670;</em> Backend &amp; APIs <em>&#9670;</em>
+        AWS <em>&#9670;</em> Authentication <em>&#9670;</em> App Store Releases <em>&#9670;</em> Play Store Releases <em>&#9670;</em>
       </span>
     </div>
   </div>
@@ -113,7 +113,7 @@
   <section class="section section--do" id="do" aria-labelledby="do-title">
     <div class="wrap">
       <header class="section__head reveal">
-        <p class="eyebrow eyebrow--ink">What I do</p>
+        <p class="eyebrow eyebrow--accent">What I do</p>
         <h2 id="do-title">Three things, done properly</h2>
         <p class="section__lede">
           I work across the stack rather than handing off at the edges — which is
@@ -148,7 +148,7 @@
           </ul>
         </li>
 
-        <li class="cap reveal" style="--accent: var(--lime)">
+        <li class="cap reveal" style="--accent: var(--green)">
           <p class="cap__num">03</p>
           <h3 class="cap__title">Cloud &amp; Deployment</h3>
           <p class="cap__body">
@@ -167,21 +167,91 @@
   <section class="section section--work" id="work" aria-labelledby="work-title">
     <div class="wrap">
       <header class="section__head reveal">
-        <p class="eyebrow eyebrow--ink">Selected work</p>
-        <h2 id="work-title">Case studies</h2>
+        <p class="eyebrow eyebrow--accent">Selected work</p>
+        <h2 id="work-title">What I've shipped</h2>
+        <p class="section__lede">
+          A closer look at the systems I've built, and which parts I owned.
+        </p>
       </header>
 
-      <div class="empty reveal">
-        <p class="empty__tag">In progress</p>
-        <h3 class="empty__title">Project write-ups are coming soon.</h3>
-        <p class="empty__body">
-          I'm documenting the apps I've shipped — the problem, the stack
-          decisions, and what I'd do differently next time. Until those land,
-          the code lives on GitHub.
-        </p>
-        <a class="btn btn--ink" href="https://github.com/luapearth" target="_blank" rel="noopener noreferrer">
-          Browse GitHub<span class="btn__ext" aria-hidden="true">&#8599;</span>
-        </a>
+      <div class="projects">
+
+        <article class="project project--featured reveal">
+          <div class="project__body">
+            <p class="project__tag">Web + Mobile &middot; Backend</p>
+            <h3 class="project__title">Janitorial Management System</h3>
+            <p class="project__client">Ranyan &middot; Current</p>
+            <p class="project__desc">
+              A janitorial operations platform delivered as a web app and a
+              mobile app. I own the backend — the whole API, the authentication
+              server, and the MCP the app talks to. Users are verified with
+              facial recognition.
+            </p>
+            <ul class="project__points">
+              <li>Designed and built the full backend API</li>
+              <li>Built the authentication server</li>
+              <li>Built the MCP serving the app</li>
+              <li>Facial-recognition verification of users</li>
+            </ul>
+          </div>
+
+          <aside class="panel" aria-label="Janitorial Management System at a glance">
+            <p class="panel__title">System at a glance</p>
+            <dl>
+              <div class="panel__row"><dt>Client</dt><dd>Ranyan</dd></div>
+              <div class="panel__row"><dt>Platforms</dt><dd>Web &middot; iOS &middot; Android</dd></div>
+              <div class="panel__row"><dt>My scope</dt><dd>Backend</dd></div>
+              <div class="panel__row"><dt>Built</dt><dd>API &middot; Auth &middot; MCP</dd></div>
+              <div class="panel__row"><dt>ID verification</dt><dd>Facial recognition</dd></div>
+            </dl>
+            <ul class="tags">
+              <li>Web</li><li>Mobile</li><li>Backend</li><li>Authentication</li><li>Facial recognition</li>
+            </ul>
+          </aside>
+        </article>
+
+        <div class="projects__grid">
+
+          <article class="project reveal">
+            <p class="project__tag project__tag--cyan">Web</p>
+            <h3 class="project__title">Financial services websites</h3>
+            <p class="project__client">Small &rarr; enterprise</p>
+            <p class="project__desc">
+              Websites for financial businesses, on engagements ranging from
+              small builds through to enterprise scale.
+            </p>
+            <ul class="tags">
+              <li>Web</li><li>Financial services</li><li>Small &rarr; enterprise</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <p class="project__tag project__tag--green">Data</p>
+            <h3 class="project__title">Sensor data &amp; dashboards</h3>
+            <p class="project__client">Collection &middot; Analysis</p>
+            <p class="project__desc">
+              Building and collecting sensor data, then turning it into
+              dashboards for analysis.
+            </p>
+            <ul class="tags">
+              <li>Data collection</li><li>Dashboards</li><li>Analytics</li>
+            </ul>
+          </article>
+
+          <article class="empty reveal">
+            <p class="empty__tag">More coming</p>
+            <h3 class="empty__title">More write-ups in progress.</h3>
+            <p class="empty__body">
+              I'm documenting the rest of what I've shipped — the problem, the
+              stack decisions, and what I'd do differently. The code lives on
+              GitHub.
+            </p>
+            <a class="btn btn--primary" href="https://github.com/luapearth" target="_blank" rel="noopener noreferrer">
+              Browse GitHub<span class="btn__ext" aria-hidden="true">&#8599;</span>
+            </a>
+          </article>
+
+        </div>
       </div>
     </div>
   </section>
@@ -189,24 +259,26 @@
   <section class="section section--about" id="about" aria-labelledby="about-title">
     <div class="wrap about">
       <div class="about__main reveal">
-        <p class="eyebrow eyebrow--ink">About</p>
+        <p class="eyebrow eyebrow--accent">About</p>
         <h2 id="about-title">Ten years of shipping, not slides</h2>
         <p>
           I'm a software engineer with more than 10 years building software for
-          the web and for phones. Most of that time has been spent close to the
-          whole stack: designing the interface, writing the services, standing
-          up the AWS infrastructure underneath, and then getting the release
-          through App Store and Play Store review.
+          the web and for phones. I work across the stack, but the backend is
+          where I spend most of my time — APIs, authentication servers, and the
+          services that hold a product together.
         </p>
         <p>
-          I care about software that survives contact with real users — fast
-          pages, clear error states, and deploys that don't need a war room.
-          I've published and maintained apps on both major stores and run the
-          cloud environments they depend on.
+          At Ranyan I own the backend of a janitorial management system that
+          ships as both a web app and a mobile app: the full API, the
+          authentication server, and the MCP the app talks to, with facial
+          recognition used to verify users. I've also built websites for
+          financial businesses, and pipelines that collect sensor data and turn
+          it into dashboards.
         </p>
         <p>
-          Right now I'm building my portfolio here, and open to product builds,
-          mobile releases, and cloud or deployment work.
+          I work on projects from small through to enterprise scale. I run the
+          AWS infrastructure the products sit on, and I've taken apps through
+          App Store and Play Store review.
         </p>
       </div>
 
@@ -214,11 +286,11 @@
         <div class="factbox">
           <h3 class="factbox__title">Where I'm useful</h3>
           <ul class="factbox__list">
-            <li>Web apps, end to end</li>
-            <li>iOS &amp; Android releases</li>
-            <li>AWS setup and migration</li>
-            <li>CI/CD and release automation</li>
-            <li>Rescuing half-finished products</li>
+            <li>Backend APIs &amp; authentication</li>
+            <li>Web &amp; mobile apps</li>
+            <li>AWS infrastructure &amp; deployment</li>
+            <li>Sensor data &amp; analytics dashboards</li>
+            <li>App Store &amp; Play Store releases</li>
           </ul>
         </div>
       </div>
@@ -228,7 +300,7 @@
   <section class="section section--contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap contact">
       <div class="contact__copy reveal">
-        <p class="eyebrow eyebrow--light">Contact</p>
+        <p class="eyebrow eyebrow--dark">Contact</p>
         <h2 id="contact-title">Let's build something.</h2>
         <p class="contact__lede">
           If you've got a product to build, an app to get through store review,
@@ -237,10 +309,10 @@
       </div>
 
       <div class="contact__actions reveal">
-        <a class="btn btn--yellow btn--wide" href="mailto:johnpaul.g.delmundo@gmail.com">
+        <a class="btn btn--primary btn--wide" href="mailto:johnpaul.g.delmundo@gmail.com">
           Email me
         </a>
-        <a class="btn btn--ghost btn--wide" href="https://github.com/luapearth" target="_blank" rel="noopener noreferrer">
+        <a class="btn btn--outline btn--wide" href="https://github.com/luapearth" target="_blank" rel="noopener noreferrer">
           GitHub<span class="btn__ext" aria-hidden="true">&#8599;</span>
         </a>
         <div class="emailrow">
