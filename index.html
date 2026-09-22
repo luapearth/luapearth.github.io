@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>John Paul Del Mundo — Software Engineer</title>
+<meta name="description" content="John Paul Del Mundo is a software engineer with more than 10 years building web and mobile products — from the interface to AWS infrastructure, shipped to the Apple App Store and Google Play." />
+<meta name="theme-color" content="#FFD84D" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="John Paul Del Mundo — Software Engineer" />
+<meta property="og:description" content="10+ years building web and mobile products that ship to the App Store and Google Play." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  /* Opt in to the scroll-reveal animation only when it can actually run.
+     Without this class the .reveal rules never hide anything, so content
+     stays readable with JS disabled or reduced-motion preferred. */
+  (function () {
+    try {
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("js-reveal");
+      }
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">JP</span>
+      <span class="brand__text">John&nbsp;Paul</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#work">Work</a></li>
+        <li><a class="nav__link" href="#do">What I do</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Software Engineer &middot; 10+ years</p>
+        <h1 id="hero-title">
+          I build <span class="mark mark--pink">web</span> &amp;
+          <span class="mark mark--cyan">mobile</span> products that actually ship.
+        </h1>
+        <p class="lede">
+          I take products end to end — the interface, the API, the infrastructure,
+          and the release. Apps I've built are live on the Apple App Store and
+          Google Play, running on AWS.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--ink" href="#work">See selected work</a>
+          <a class="btn btn--outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <aside class="sticker" aria-label="At a glance">
+        <p class="sticker__title">At a glance</p>
+        <dl class="sticker__list">
+          <div class="sticker__row">
+            <dt>Experience</dt>
+            <dd>10+ yrs</dd>
+          </div>
+          <div class="sticker__row">
+            <dt>Shipped&nbsp;to</dt>
+            <dd>App Store &middot; Play</dd>
+          </div>
+          <div class="sticker__row">
+            <dt>Infra</dt>
+            <dd>AWS</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__group">
+        Web Development <em>&#9670;</em> Mobile Apps <em>&#9670;</em> AWS <em>&#9670;</em>
+        CI/CD <em>&#9670;</em> App Store Releases <em>&#9670;</em> Play Store Releases <em>&#9670;</em>
+      </span>
+      <span class="marquee__group">
+        Web Development <em>&#9670;</em> Mobile Apps <em>&#9670;</em> AWS <em>&#9670;</em>
+        CI/CD <em>&#9670;</em> App Store Releases <em>&#9670;</em> Play Store Releases <em>&#9670;</em>
+      </span>
+    </div>
+  </div>
+
+  <section class="section section--do" id="do" aria-labelledby="do-title">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--ink">What I do</p>
+        <h2 id="do-title">Three things, done properly</h2>
+        <p class="section__lede">
+          I work across the stack rather than handing off at the edges — which is
+          usually why the thing gets finished.
+        </p>
+      </header>
+
+      <ol class="capabilities">
+        <li class="cap reveal" style="--accent: var(--yellow)">
+          <p class="cap__num">01</p>
+          <h3 class="cap__title">Web Development</h3>
+          <p class="cap__body">
+            Responsive, accessible front ends and the services behind them.
+            Component-driven UI, predictable state, and performance budgets that
+            hold up once real traffic arrives.
+          </p>
+          <ul class="tags">
+            <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node.js</li><li>REST APIs</li>
+          </ul>
+        </li>
+
+        <li class="cap reveal" style="--accent: var(--cyan)">
+          <p class="cap__num">02</p>
+          <h3 class="cap__title">Mobile Development</h3>
+          <p class="cap__body">
+            Apps built for both platforms and carried all the way to the stores:
+            build signing, provisioning, store review, staged rollouts, and the
+            fixes that come after release.
+          </p>
+          <ul class="tags">
+            <li>React Native</li><li>Swift</li><li>Kotlin</li><li>iOS</li><li>Android</li>
+          </ul>
+        </li>
+
+        <li class="cap reveal" style="--accent: var(--lime)">
+          <p class="cap__num">03</p>
+          <h3 class="cap__title">Cloud &amp; Deployment</h3>
+          <p class="cap__body">
+            The infrastructure the product sits on — compute, storage, databases,
+            and the pipelines that move changes into production without a war
+            room.
+          </p>
+          <ul class="tags">
+            <li>AWS</li><li>S3 &amp; EC2</li><li>Lambda</li><li>Docker</li><li>CI/CD</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow eyebrow--ink">Selected work</p>
+        <h2 id="work-title">Case studies</h2>
+      </header>
+
+      <div class="empty reveal">
+        <p class="empty__tag">In progress</p>
+        <h3 class="empty__title">Project write-ups are coming soon.</h3>
+        <p class="empty__body">
+          I'm documenting the apps I've shipped — the problem, the stack
+          decisions, and what I'd do differently next time. Until those land,
+          the code lives on GitHub.
+        </p>
+        <a class="btn btn--ink" href="https://github.com/luapearth" target="_blank" rel="noopener noreferrer">
+          Browse GitHub<span class="btn__ext" aria-hidden="true">&#8599;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--about" id="about" aria-labelledby="about-title">
+    <div class="wrap about">
+      <div class="about__main reveal">
+        <p class="eyebrow eyebrow--ink">About</p>
+        <h2 id="about-title">Ten years of shipping, not slides</h2>
+        <p>
+          I'm a software engineer with more than 10 years building software for
+          the web and for phones. Most of that time has been spent close to the
+          whole stack: designing the interface, writing the services, standing
+          up the AWS infrastructure underneath, and then getting the release
+          through App Store and Play Store review.
+        </p>
+        <p>
+          I care about software that survives contact with real users — fast
+          pages, clear error states, and deploys that don't need a war room.
+          I've published and maintained apps on both major stores and run the
+          cloud environments they depend on.
+        </p>
+        <p>
+          Right now I'm building my portfolio here, and open to product builds,
+          mobile releases, and cloud or deployment work.
+        </p>
+      </div>
+
+      <div class="about__aside reveal">
+        <div class="factbox">
+          <h3 class="factbox__title">Where I'm useful</h3>
+          <ul class="factbox__list">
+            <li>Web apps, end to end</li>
+            <li>iOS &amp; Android releases</li>
+            <li>AWS setup and migration</li>
+            <li>CI/CD and release automation</li>
+            <li>Rescuing half-finished products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <div class="contact__copy reveal">
+        <p class="eyebrow eyebrow--light">Contact</p>
+        <h2 id="contact-title">Let's build something.</h2>
+        <p class="contact__lede">
+          If you've got a product to build, an app to get through store review,
+          or infrastructure that needs sorting out — send me a note.
+        </p>
+      </div>
+
+      <div class="contact__actions reveal">
+        <a class="btn btn--yellow btn--wide" href="mailto:johnpaul.g.delmundo@gmail.com">
+          Email me
+        </a>
+        <a class="btn btn--ghost btn--wide" href="https://github.com/luapearth" target="_blank" rel="noopener noreferrer">
+          GitHub<span class="btn__ext" aria-hidden="true">&#8599;</span>
+        </a>
+        <div class="emailrow">
+          <code class="emailrow__value">johnpaul.g.delmundo@gmail.com</code>
+          <button class="copy" type="button" data-copy="johnpaul.g.delmundo@gmail.com" aria-label="Copy email address">
+            <span class="copy__label">Copy</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>&copy; <span id="year">2026</span> John Paul Del Mundo</p>
+    <p>Built by hand — HTML, CSS, and a little JavaScript. No build step.</p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

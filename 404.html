@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found — John Paul Del Mundo</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#FFD84D" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<main id="main" class="lost">
+  <div class="lost__card">
+    <p class="eyebrow eyebrow--ink">Error 404</p>
+    <h1 class="lost__title">Nothing here.</h1>
+    <p class="lost__body">
+      This link is broken, moved, or never existed. The rest of the site is
+      still where you left it.
+    </p>
+    <a class="btn btn--ink" href="/">Back to the home page</a>
+  </div>
+</main>
+
+<style>
+  /* Scoped to the 404 page only — not worth a shared rule. */
+  .lost {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    background: var(--yellow);
+  }
+  .lost__card {
+    width: 100%;
+    max-width: 560px;
+    padding: clamp(28px, 5vw, 48px);
+    background: var(--surface);
+    border: var(--bw) solid var(--ink);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+  }
+  .lost__title { font-size: clamp(2rem, 1.2rem + 3vw, 3.2rem); margin-bottom: 16px; }
+  .lost__body { color: var(--muted); margin-bottom: 28px; }
+</style>
+</body>
+</html>

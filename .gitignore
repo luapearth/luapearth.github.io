@@ -1,0 +1,14 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Editors
+.vscode/
+.idea/
+
+# Tooling (there is no build step — this is just belt and braces)
+node_modules/
+*.log
