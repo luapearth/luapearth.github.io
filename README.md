@@ -105,7 +105,14 @@ block with a grid of cards and add the grid rule to `styles.css`:
 
 ## Content that still needs your input
 
-The project showcase is now built from your own account of the work, not from
+**Ownership framing on employer work is deliberate — do not "tidy" it away.**
+The Janitorial Management System is Ranyan's product. John Paul built its
+backend as an employee. The card says "Built for Ranyan — my employer", the
+panel lists "Owned by: Ranyan", and a dashed note states the platform is not his
+product. Those are there on purpose, to avoid implying he owns or sells a system
+that belongs to his employer. Keep them if you rewrite the copy.
+
+The project showcase is built from John Paul's own account of the work, not from
 the Stitch mockups (which contain invented companies, metrics, dates and an
 "AWS Certified" claim — none of that is on the site).
 

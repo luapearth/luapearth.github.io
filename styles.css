@@ -505,6 +505,18 @@ p { text-wrap: pretty; }
   border: 2px solid var(--line);
 }
 
+/* Deliberate ownership disclaimer on work built for an employer. */
+.project__note {
+  margin-top: 20px;
+  padding: 12px 14px;
+  background: var(--bg-deep);
+  border: 2px dashed var(--line);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+.project__note strong { color: var(--text); }
+
 /* Technical fact panel on the featured card. */
 .panel {
   padding: 20px;
